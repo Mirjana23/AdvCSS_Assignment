@@ -1,0 +1,22 @@
+a[href^="https://www.google.com"] {
+    color: green;
+}
+a[href*="link"] {
+    color: red;
+}
+#second-div p:nth-of-type(odd){
+    color: red;
+}
+#second-div p:nth-of-type(even){
+    color: dodgerblue;
+}
+#first-div > p::after {
+    content: "-NEW";
+    font-style: italic;
+    color: yellow;
+}
+body > p:last-of-type:hover{
+    /*iz nekog razloga je italic bagovao, pa sam nasla i transform kao opciju za svaki slucaj*/
+    /*transform: skewX(-20deg);*/
+    font-style: italic;
+}
